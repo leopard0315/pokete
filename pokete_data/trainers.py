@@ -60,6 +60,14 @@ trainers = {
                  ["Oh!", "My Pokete is not just rare", "It's also strong"],
                  ["Congratulations!", "I hope you can also catch one!"], 23, 12)
     },
+    {   # first boss(Mr.A) in playmap_5
+        "pokes": [("steini", 400)],
+        "args": ("Mr.A", "He",
+                 ["Hi!","My name is Mr.A", "I am the first boss trainer in this game",
+                  "Did you want a Fight or Runaway? hahaha"],
+                 ["You are a loser"],
+                 ["OMG, I lost!"], 26, 14)
+    },
     ],
     "playmap_6": [{
         "pokes": [("treenator", 400)],
@@ -113,6 +121,13 @@ trainers = {
                  ["Hello, fellow stranger!", "This town is known for its bird Poketes"],
                  ["Haha, you're bad!"],
                  ["Damn!"], 5, 31)
+    },
+    {   # second boss(Ms.B) in playmap_13 
+        "pokes": [("owol", 600)],
+        "args": ("Ms.B", "She",
+                 ["Hello!", "My name is Ms.B","I am the second boss trainer","Mr.A is so weak isn't it?","Now it's my turn!"],
+                 ["Haha, you're so weak!"],
+                 ["Wow!", "You're so strong"], 7, 26)
     },
     ],
     "playmap_14": [{
@@ -182,6 +197,13 @@ trainers = {
                  ["Yoooo!", "What's up?"],
                  ["You're a loooser!"],
                  ["Duck!"], 15, 7)
+    },
+    {   # third boss(Mr.C) in playmap_19
+        "pokes": [("choka", 700),("wolfiro", 700)],
+        "args": ("Mr.C", "He",
+                 ["Yoooo!", "My name is Mr.C", "I am the third boss trainer hahaha!","Let's fight"],
+                 ["You're a loooser!"],
+                 ["Duck!", "You are so brave!!"], 13, 3)
     },
     ],
     "playmap_21": [{
@@ -323,8 +345,14 @@ trainers = {
                  ["You're a loooser!"],
                  ["Cool, huh?"], 8, 37)
         },
-    ],
+    ],  # fourth boss(Ms.D) in playmap_40
     "playmap_40": [{
+        "pokes": [("saugh", 1700),("crabbat", 1700),("megapois", 1700)],
+        "args": ("Ms.D", "She",
+                 ["Hi! Baby trainer","My name is Ms.D","My Pokete will blow you away! hahah!","I am so happy right now!"],
+                 ["You're a loooser!"],
+                 ["Cool~!", "You are so lucky trainer"], 50, 8)
+        },{
         "pokes": [("rustacean", 1800)],
         "args": ("Angler Gustav", "He",
                  ["My Pokete will blow you away!"],
@@ -358,21 +386,22 @@ trainers = {
                      ["I wish you the best of luck"], 16, 7)
         },
         {
-            "pokes": [("megapois", 2200), ("bushy", 2200)],
-            "args": ("Gardener Daniela", "She",
-                     ["Look at my newest creation!"],
-                     ["You'll do better next time."],
-                     ["I wish you the best of luck"], 13, 7)
-        },
-        {
             "pokes": [("mowcow", 2300), ("treenator", 2300), ("wheeto", 2300)],
             "args": ("Leader Sebastian", "He",
-                     ["So, I'll be your last opponent.",
-                      "Let's have a fair fight!"],
+                     ["Hi!","Let's have a fair fight!"],
+                     ["You'll do better next time."],
+                     ["Wow!","You are so strong!",
+                      "Then you can beat the last final boss!!",
+                      "Good luck!!"], 10, 7)
+        },
+        {   # final boss(Mr.X) in playmap_46
+            "pokes": [("megapois", 2400), ("mowcow", 2300), ("bushy", 2300),("treenator", 2400)],
+            "args": ("Leader Mr.X", "He",
+                     ["Hi!","I am the last final boss in this game","Let's have a fair fight!"],
                      ["You'll do better next time."],
                      ["You're quite a good trainer.",
-                      "Hopefully you can beat all other trainers with whom "
-                      "you may cross paths!"], 10, 7)
+                      "Hopefully you can beat all other trainers with whom ",
+                      "you may cross paths!"], 7, 7)
         },
     ],
 }
